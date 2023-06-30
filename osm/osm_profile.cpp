@@ -1,4 +1,4 @@
-#include <routingkit/osm_profile.h>
+#include "osm_profile.h"
 
 namespace RoutingKit{
 

@@ -1,4 +1,4 @@
-#include <routingkit/osm_graph_builder.h>
+#include "osm_graph_builder.h"
 #include <routingkit/geo_dist.h>
 #include <routingkit/timer.h>
 #include <routingkit/sort.h>
@@ -8,7 +8,7 @@
 #include <routingkit/bit_vector.h>
 #include <routingkit/filter.h>
 #include <routingkit/id_mapper.h>
-#include <routingkit/osm_decoder.h>
+#include "osm_decoder.h"
 
 #include <vector>
 #include <stdint.h>

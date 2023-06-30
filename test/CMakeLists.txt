@@ -1,0 +1,83 @@
+cmake_minimum_required(VERSION 3.14)
+project(test)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(${CMAKE_SOURCE_DIR}/osm/)
+
+SET(UTILITY_SOURCE_FILES expect.cpp expect.h)
+
+add_executable(test_basic_features ${UTILITY_SOURCE_FILES} test_basic_features.cpp)
+target_link_libraries(test_basic_features osm module pthread z)
+
+add_executable(test_bit_vector ${UTILITY_SOURCE_FILES} test_bit_vector.cpp)
+target_link_libraries(test_bit_vector osm module pthread z)
+
+add_executable(test_buffered_asynchronous_reader ${UTILITY_SOURCE_FILES} test_buffered_asynchronous_reader.cpp)
+target_link_libraries(test_buffered_asynchronous_reader osm module pthread z)
+
+add_executable(test_contraction_hierarchy_extra_weight ${UTILITY_SOURCE_FILES} test_contraction_hierarchy_extra_weight.cpp)
+target_link_libraries(test_contraction_hierarchy_extra_weight osm module pthread z)
+
+add_executable(test_contraction_hierarchy_path_query ${UTILITY_SOURCE_FILES} test_contraction_hierarchy_path_query.cpp)
+target_link_libraries(test_contraction_hierarchy_path_query osm module pthread z)
+
+add_executable(test_contraction_hierarchy_pinned_query ${UTILITY_SOURCE_FILES} test_contraction_hierarchy_pinned_query.cpp)
+target_link_libraries(test_contraction_hierarchy_pinned_query osm module pthread z)
+
+add_executable(test_customizable_contraction_hierarchy ${UTILITY_SOURCE_FILES} test_customizable_contraction_hierarchy.cpp)
+target_link_libraries(test_customizable_contraction_hierarchy osm module pthread z)
+
+add_executable(test_customizable_contraction_hierarchy_customization ${UTILITY_SOURCE_FILES} test_customizable_contraction_hierarchy_customization.cpp)
+target_link_libraries(test_customizable_contraction_hierarchy_customization osm module pthread z)
+
+add_executable(test_customizable_contraction_hierarchy_path_query ${UTILITY_SOURCE_FILES} test_customizable_contraction_hierarchy_path_query.cpp)
+target_link_libraries(test_customizable_contraction_hierarchy_path_query osm module pthread z)
+
+add_executable(test_customizable_contraction_hierarchy_perfect_customization ${UTILITY_SOURCE_FILES} test_customizable_contraction_hierarchy_perfect_customization.cpp)
+target_link_libraries(test_customizable_contraction_hierarchy_perfect_customization osm module pthread z)
+
+add_executable(test_customizable_contraction_hierarchy_pinned_query ${UTILITY_SOURCE_FILES} test_customizable_contraction_hierarchy_pinned_query.cpp)
+target_link_libraries(test_customizable_contraction_hierarchy_pinned_query osm module pthread z)
+
+add_executable(test_customizable_contraction_hierarchy_reset ${UTILITY_SOURCE_FILES} test_customizable_contraction_hierarchy_reset.cpp)
+target_link_libraries(test_customizable_contraction_hierarchy_reset osm module pthread z)
+
+add_executable(test_dijkstra ${UTILITY_SOURCE_FILES} test_dijkstra.cpp)
+target_link_libraries(test_dijkstra osm module pthread z)
+
+add_executable(test_geo_dist ${UTILITY_SOURCE_FILES} test_geo_dist.cpp)
+target_link_libraries(test_geo_dist osm module pthread z)
+
+add_executable(test_id_mapper ${UTILITY_SOURCE_FILES} test_id_mapper.cpp)
+target_link_libraries(test_id_mapper osm module pthread z)
+
+add_executable(test_id_set_queue ${UTILITY_SOURCE_FILES} test_id_set_queue.cpp)
+target_link_libraries(test_id_set_queue osm module pthread z)
+
+add_executable(test_inverse_vector ${UTILITY_SOURCE_FILES} test_inverse_vector.cpp)
+target_link_libraries(test_inverse_vector osm module pthread z)
+
+add_executable(test_nearest_neighbor ${UTILITY_SOURCE_FILES} test_nearest_neighbor.cpp)
+target_link_libraries(test_nearest_neighbor osm module pthread z)
+
+add_executable(test_nested_dissection ${UTILITY_SOURCE_FILES} test_nested_dissection.cpp)
+target_link_libraries(test_nested_dissection osm module pthread z)
+
+add_executable(test_osm_simple ${UTILITY_SOURCE_FILES} test_osm_simple.cpp)
+target_link_libraries(test_osm_simple osm module pthread z)
+
+add_executable(test_permutation ${UTILITY_SOURCE_FILES} test_permutation.cpp)
+target_link_libraries(test_permutation osm module pthread z)
+
+add_executable(test_protobuf ${UTILITY_SOURCE_FILES} test_protobuf.cpp)
+target_link_libraries(test_protobuf osm module pthread z)
+
+add_executable(test_sort ${UTILITY_SOURCE_FILES} test_sort.cpp)
+target_link_libraries(test_sort osm module pthread z)
+
+add_executable(test_strongly_connected_component ${UTILITY_SOURCE_FILES} test_strongly_connected_component.cpp)
+target_link_libraries(test_strongly_connected_component osm module pthread z)
+
+add_executable(test_tag_map ${UTILITY_SOURCE_FILES} test_tag_map.cpp)
+target_link_libraries(test_tag_map osm module pthread z)

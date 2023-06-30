@@ -2,7 +2,9 @@
 #include <routingkit/id_mapper.h>
 #include <routingkit/timer.h>
 
-#include "bit_select.h"
+// FIXME(wang.song) 这里引用怪怪的
+#include "../module/bit_select.h"
+
 #include "expect.h"
 
 #include <iostream>

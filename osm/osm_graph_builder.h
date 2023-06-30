@@ -3,7 +3,7 @@
 
 #include <routingkit/bit_vector.h>
 #include <routingkit/tag_map.h>
-#include <routingkit/osm_decoder.h>
+#include "osm_decoder.h"
 
 #include <vector>
 #include <functional>

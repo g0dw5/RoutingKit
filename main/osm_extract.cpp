@@ -1,5 +1,5 @@
-#include <routingkit/osm_profile.h>
-#include <routingkit/osm_graph_builder.h>
+#include "osm_profile.h"
+#include "osm_graph_builder.h"
 #include <routingkit/vector_io.h>
 #include <routingkit/timer.h>
 #include <routingkit/tag_map.h>

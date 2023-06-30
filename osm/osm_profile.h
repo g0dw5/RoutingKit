@@ -1,9 +1,10 @@
 #ifndef ROUTING_KIT_OSM_PROFILE_HPP
 #define ROUTING_KIT_OSM_PROFILE_HPP
 
-#include <routingkit/osm_graph_builder.h>
 #include <routingkit/tag_map.h>
-#include <routingkit/osm_decoder.h>
+
+#include "osm_graph_builder.h"
+#include "osm_decoder.h"
 
 #include <functional>
 #include <string>

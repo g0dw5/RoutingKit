@@ -1,7 +1,7 @@
 #include <routingkit/contraction_hierarchy.h>
 #include <routingkit/customizable_contraction_hierarchy.h>
-#include <routingkit/osm_graph_builder.h>
-#include <routingkit/osm_profile.h>
+#include "osm_graph_builder.h"
+#include "osm_profile.h"
 #include <routingkit/nested_dissection.h>
 #include <routingkit/timer.h>
 
