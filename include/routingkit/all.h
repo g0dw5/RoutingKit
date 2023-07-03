@@ -18,10 +18,6 @@
 #include <routingkit/inverse_vector.h>
 #include <routingkit/min_max.h>
 #include <routingkit/nested_dissection.h>
-#include <routingkit/osm_decoder.h>
-#include <routingkit/osm_graph_builder.h>
-#include <routingkit/osm_profile.h>
-#include <routingkit/osm_simple.h>
 #include <routingkit/permutation.h>
 #include <routingkit/sort.h>
 #include <routingkit/tag_map.h>
